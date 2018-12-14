@@ -1,0 +1,2338 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="7/30/2018 3:50:08 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="IRC-GATE01"
+  DTS:CreatorName="IRC\uitake"
+  DTS:DTSID="{A6A84051-98A6-4E20-878D-6CC8BF7FFDE7}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="14.0.1000.169"
+  DTS:LocaleID="2057"
+  DTS:ObjectName="CACI"
+  DTS:PackageType="5"
+  DTS:VersionBuild="7"
+  DTS:VersionGUID="{4652F09F-BE46-4BDD-8220-F7B59C698E7A}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:ConnectionManagers>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[CACI - Consumer Registers.csv]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{759362DA-68E2-4199-A66A-88931DC298FD}"
+      DTS:ObjectName="CACI - Consumer Registers.csv">
+      <DTS:PropertyExpression
+        DTS:Name="ConnectionString">@[User::varFileName]</DTS:PropertyExpression>
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="2057"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x0022_"
+          DTS:CodePage="1252">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="id1"
+              DTS:DTSID="{7089267D-B25A-428F-BD3E-77BEAD8475ED}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="id2"
+              DTS:DTSID="{DDA5EF8A-22A6-421D-AFEF-A2FA86EF2D6F}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="title"
+              DTS:DTSID="{1E7B81F0-A3D2-498F-8A42-95C6FBFFA0CE}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="forename"
+              DTS:DTSID="{7442F644-7144-4CE9-9865-9C0C23E3485A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="surname"
+              DTS:DTSID="{FF295A09-B34D-42FF-AEF7-8640385DDB49}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="address1"
+              DTS:DTSID="{D52FDE92-1C4F-41EF-B55B-9072690BA408}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="address2"
+              DTS:DTSID="{3736881D-7813-4AEC-90F7-6876AF52CFCF}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="address3"
+              DTS:DTSID="{4A7CC373-F7C3-459B-A916-D5E7EC0960A8}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="address4"
+              DTS:DTSID="{C4969954-C613-46B1-AFB8-66300CE80135}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="address5"
+              DTS:DTSID="{6A98F5E6-B9B6-464F-8D18-5FD0B7BF5D72}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="address6"
+              DTS:DTSID="{F914F856-856A-447A-A028-2BB6C84C67D6}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="9"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="postcode"
+              DTS:DTSID="{F3EE3007-81D1-4B33-B44B-78F57DEDB389}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="last_seen"
+              DTS:DTSID="{463B0858-92FC-462C-94EE-944E07AC107E}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000A_"
+              DTS:MaximumWidth="1"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="source"
+              DTS:DTSID="{9FA19213-6E6E-44A8-9E77-35B2F2C1D4B7}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[cr2013.csv]"
+      DTS:CreationName="FLATFILE"
+      DTS:DTSID="{F182AE95-85DD-4FD3-98F2-4D79A1AA77C8}"
+      DTS:ObjectName="cr2013.csv">
+      <DTS:PropertyExpression
+        DTS:Name="ConnectionString">@[User::varFilePath] + "\\cr2013.csv"</DTS:PropertyExpression>
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:Format="Delimited"
+          DTS:LocaleID="2057"
+          DTS:HeaderRowDelimiter="_x000D__x000A_"
+          DTS:ColumnNamesInFirstDataRow="True"
+          DTS:RowDelimiter=""
+          DTS:TextQualifier="_x0022_"
+          DTS:CodePage="1252"
+          DTS:ConnectionString="\\v0014-sql01\Shared\CDRC Data\UCL\CACI - Consumer registers\cr2013.csv">
+          <DTS:FlatFileColumns>
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="id1"
+              DTS:DTSID="{B5A68C25-D6F9-40B2-88C8-BF13BE8375DA}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="id2"
+              DTS:DTSID="{3CA619E9-108D-48B9-86D0-DCE9A0E0852A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="title"
+              DTS:DTSID="{37F13FFD-3774-40EC-84B6-E7AB00647218}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="forename"
+              DTS:DTSID="{69B24DE7-8F52-4AD1-8B2E-61A421B99FE4}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="50"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="surname"
+              DTS:DTSID="{75A19A1D-9879-404F-AD55-4D8EA4504DF1}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="address1"
+              DTS:DTSID="{8EDBA2C2-0F62-49A7-B39C-E4996759C69A}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="address2"
+              DTS:DTSID="{8110B07F-091E-460B-848C-8612184F7C6C}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="address3"
+              DTS:DTSID="{BF597734-4BDB-43B3-91C7-9BB212E235E4}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="address4"
+              DTS:DTSID="{58918310-2748-4D55-8618-8AC6218C5EC4}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="address5"
+              DTS:DTSID="{8F0F6F97-E4F9-4005-AA3C-BEB90305BA27}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="100"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="address6"
+              DTS:DTSID="{B8B206B8-B424-4C58-A004-7D969FF50C17}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="9"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="postcode"
+              DTS:DTSID="{B972246C-7106-42F7-A525-A0560E5756AB}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x002C_"
+              DTS:MaximumWidth="9"
+              DTS:DataType="129"
+              DTS:TextQualified="True"
+              DTS:ObjectName="std_postcode"
+              DTS:DTSID="{27641DD1-C52A-49AB-9DF8-72600965C769}"
+              DTS:CreationName="" />
+            <DTS:FlatFileColumn
+              DTS:ColumnType="Delimited"
+              DTS:ColumnDelimiter="_x000A_"
+              DTS:DataType="3"
+              DTS:TextQualified="True"
+              DTS:ObjectName="last_seen"
+              DTS:DTSID="{A82AD100-481A-418B-B6CF-DC14C404142C}"
+              DTS:CreationName="" />
+          </DTS:FlatFileColumns>
+        </DTS:ConnectionManager>
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+    <DTS:ConnectionManager
+      DTS:refId="Package.ConnectionManagers[V0014-SQL01.CDRC]"
+      DTS:CreationName="OLEDB"
+      DTS:DTSID="{6DA66573-0AB4-496C-84A4-BAE4DDCA33D6}"
+      DTS:ObjectName="V0014-SQL01.CDRC">
+      <DTS:ObjectData>
+        <DTS:ConnectionManager
+          DTS:ConnectionString="Data Source=V0014-SQL01;Initial Catalog=CDRC;Provider=SQLNCLI11.1;Integrated Security=SSPI;Auto Translate=False;" />
+      </DTS:ObjectData>
+    </DTS:ConnectionManager>
+  </DTS:ConnectionManagers>
+  <DTS:Variables>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{6125B21A-B672-4F80-B5D3-7FA73BC31F04}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="varFileName">
+      <DTS:VariableValue
+        DTS:DataType="8"
+        xml:space="preserve"></DTS:VariableValue>
+    </DTS:Variable>
+    <DTS:Variable
+      DTS:CreationName=""
+      DTS:DTSID="{6D67CCD7-97EC-48D5-9532-A34841ABB623}"
+      DTS:IncludeInDebugDump="2345"
+      DTS:Namespace="User"
+      DTS:ObjectName="varFilePath">
+      <DTS:VariableValue
+        DTS:DataType="8">\\v0014-sql01\Shared\CDRC Data\UCL\CACI - Consumer registers</DTS:VariableValue>
+    </DTS:Variable>
+  </DTS:Variables>
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\cr2013"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{8AF04B2C-871A-4F20-9D6A-3C420C628616}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="cr2013"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\cr2013\Derived Column"
+              componentClassID="Microsoft.DerivedColumn"
+              contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+              name="Derived Column"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\cr2013\Derived Column.Inputs[Derived Column Input]"
+                  description="Input to the Derived Column Transformation"
+                  name="Derived Column Input">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\cr2013\Derived Column.Outputs[Derived Column Output]"
+                  description="Default Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  name="Derived Column Output"
+                  synchronousInputId="Package\cr2013\Derived Column.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\cr2013\Derived Column.Outputs[Derived Column Output].Columns[year]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\cr2013\Derived Column.Outputs[Derived Column Output].Columns[year]"
+                      name="year"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">(DT_I4)[RIGHT]([REPLACE]([TOKEN](@[User::varFileName],"\\",[TOKENCOUNT](@[User::varFileName],"\\")),".csv",""),4)</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">(DT_I4)RIGHT(REPLACE(TOKEN(@[User::varFileName],"\\",TOKENCOUNT(@[User::varFileName],"\\")),".csv",""),4)</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\cr2013\Derived Column.Outputs[Derived Column Error Output]"
+                  description="Error Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Derived Column Error Output"
+                  synchronousInputId="Package\cr2013\Derived Column.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\cr2013\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\cr2013\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\cr2013\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\cr2013\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\cr2013\Flat File Source"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Source"
+              localeId="2057"
+              name="Flat File Source"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether zero-length columns are treated as null."
+                  name="RetainNulls">true</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\cr2013\Flat File Source.Connections[FlatFileConnection]"
+                  connectionManagerID="Package.ConnectionManagers[cr2013.csv]"
+                  connectionManagerRefId="Package.ConnectionManagers[cr2013.csv]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\cr2013\Flat File Source.Outputs[Flat File Source Output]"
+                  name="Flat File Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\cr2013\Flat File Source.Outputs[Flat File Source Output].Columns[id1]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\cr2013\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[id1]"
+                      lineageId="Package\cr2013\Flat File Source.Outputs[Flat File Source Output].Columns[id1]"
+                      name="id1"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\cr2013\Flat File Source.Outputs[Flat File Source Output].Columns[id2]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\cr2013\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[id2]"
+                      lineageId="Package\cr2013\Flat File Source.Outputs[Flat File Source Output].Columns[id2]"
+                      name="id2"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\cr2013\Flat File Source.Outputs[Flat File Source Output].Columns[title]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\cr2013\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[title]"
+                      length="50"
+                      lineageId="Package\cr2013\Flat File Source.Outputs[Flat File Source Output].Columns[title]"
+                      name="title"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\cr2013\Flat File Source.Outputs[Flat File Source Output].Columns[forename]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\cr2013\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[forename]"
+                      length="50"
+                      lineageId="Package\cr2013\Flat File Source.Outputs[Flat File Source Output].Columns[forename]"
+                      name="forename"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\cr2013\Flat File Source.Outputs[Flat File Source Output].Columns[surname]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\cr2013\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[surname]"
+                      length="50"
+                      lineageId="Package\cr2013\Flat File Source.Outputs[Flat File Source Output].Columns[surname]"
+                      name="surname"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\cr2013\Flat File Source.Outputs[Flat File Source Output].Columns[address1]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\cr2013\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[address1]"
+                      length="100"
+                      lineageId="Package\cr2013\Flat File Source.Outputs[Flat File Source Output].Columns[address1]"
+                      name="address1"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\cr2013\Flat File Source.Outputs[Flat File Source Output].Columns[address2]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\cr2013\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[address2]"
+                      length="100"
+                      lineageId="Package\cr2013\Flat File Source.Outputs[Flat File Source Output].Columns[address2]"
+                      name="address2"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\cr2013\Flat File Source.Outputs[Flat File Source Output].Columns[address3]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\cr2013\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[address3]"
+                      length="100"
+                      lineageId="Package\cr2013\Flat File Source.Outputs[Flat File Source Output].Columns[address3]"
+                      name="address3"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\cr2013\Flat File Source.Outputs[Flat File Source Output].Columns[address4]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\cr2013\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[address4]"
+                      length="100"
+                      lineageId="Package\cr2013\Flat File Source.Outputs[Flat File Source Output].Columns[address4]"
+                      name="address4"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\cr2013\Flat File Source.Outputs[Flat File Source Output].Columns[address5]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\cr2013\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[address5]"
+                      length="100"
+                      lineageId="Package\cr2013\Flat File Source.Outputs[Flat File Source Output].Columns[address5]"
+                      name="address5"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\cr2013\Flat File Source.Outputs[Flat File Source Output].Columns[address6]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\cr2013\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[address6]"
+                      length="100"
+                      lineageId="Package\cr2013\Flat File Source.Outputs[Flat File Source Output].Columns[address6]"
+                      name="address6"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\cr2013\Flat File Source.Outputs[Flat File Source Output].Columns[postcode]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\cr2013\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[postcode]"
+                      length="9"
+                      lineageId="Package\cr2013\Flat File Source.Outputs[Flat File Source Output].Columns[postcode]"
+                      name="postcode"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\cr2013\Flat File Source.Outputs[Flat File Source Output].Columns[std_postcode]"
+                      codePage="1252"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\cr2013\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[std_postcode]"
+                      length="9"
+                      lineageId="Package\cr2013\Flat File Source.Outputs[Flat File Source Output].Columns[std_postcode]"
+                      name="std_postcode"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\cr2013\Flat File Source.Outputs[Flat File Source Output].Columns[last_seen]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\cr2013\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[last_seen]"
+                      lineageId="Package\cr2013\Flat File Source.Outputs[Flat File Source Output].Columns[last_seen]"
+                      name="last_seen"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\cr2013\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[id1]"
+                      dataType="i4"
+                      name="id1" />
+                    <externalMetadataColumn
+                      refId="Package\cr2013\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[id2]"
+                      dataType="i4"
+                      name="id2" />
+                    <externalMetadataColumn
+                      refId="Package\cr2013\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[title]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="title" />
+                    <externalMetadataColumn
+                      refId="Package\cr2013\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[forename]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="forename" />
+                    <externalMetadataColumn
+                      refId="Package\cr2013\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[surname]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="surname" />
+                    <externalMetadataColumn
+                      refId="Package\cr2013\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[address1]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="address1" />
+                    <externalMetadataColumn
+                      refId="Package\cr2013\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[address2]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="address2" />
+                    <externalMetadataColumn
+                      refId="Package\cr2013\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[address3]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="address3" />
+                    <externalMetadataColumn
+                      refId="Package\cr2013\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[address4]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="address4" />
+                    <externalMetadataColumn
+                      refId="Package\cr2013\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[address5]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="address5" />
+                    <externalMetadataColumn
+                      refId="Package\cr2013\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[address6]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="address6" />
+                    <externalMetadataColumn
+                      refId="Package\cr2013\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[postcode]"
+                      codePage="1252"
+                      dataType="str"
+                      length="9"
+                      name="postcode" />
+                    <externalMetadataColumn
+                      refId="Package\cr2013\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[std_postcode]"
+                      codePage="1252"
+                      dataType="str"
+                      length="9"
+                      name="std_postcode" />
+                    <externalMetadataColumn
+                      refId="Package\cr2013\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[last_seen]"
+                      dataType="i4"
+                      name="last_seen" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\cr2013\Flat File Source.Outputs[Flat File Source Error Output]"
+                  isErrorOut="true"
+                  name="Flat File Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\cr2013\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      codePage="1252"
+                      dataType="text"
+                      description="Flat File Source Error Output Column"
+                      lineageId="Package\cr2013\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      name="Flat File Source Error Output Column" />
+                    <outputColumn
+                      refId="Package\cr2013\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\cr2013\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\cr2013\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\cr2013\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\cr2013\OLE DB Destination"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="OLE DB Destination"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[caci].[Controlled_ConsumerRegisters]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1252</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">true</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\cr2013\OLE DB Destination.Connections[OleDbConnection]"
+                  connectionManagerID="Package.ConnectionManagers[V0014-SQL01.CDRC]"
+                  connectionManagerRefId="Package.ConnectionManagers[V0014-SQL01.CDRC]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\cr2013\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\cr2013\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[id1]"
+                      cachedDataType="i4"
+                      cachedName="id1"
+                      externalMetadataColumnId="Package\cr2013\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[id1]"
+                      lineageId="Package\cr2013\Flat File Source.Outputs[Flat File Source Output].Columns[id1]" />
+                    <inputColumn
+                      refId="Package\cr2013\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[id2]"
+                      cachedDataType="i4"
+                      cachedName="id2"
+                      externalMetadataColumnId="Package\cr2013\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[id2]"
+                      lineageId="Package\cr2013\Flat File Source.Outputs[Flat File Source Output].Columns[id2]" />
+                    <inputColumn
+                      refId="Package\cr2013\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[title]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="title"
+                      externalMetadataColumnId="Package\cr2013\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[title]"
+                      lineageId="Package\cr2013\Flat File Source.Outputs[Flat File Source Output].Columns[title]" />
+                    <inputColumn
+                      refId="Package\cr2013\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[forename]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="forename"
+                      externalMetadataColumnId="Package\cr2013\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[forename]"
+                      lineageId="Package\cr2013\Flat File Source.Outputs[Flat File Source Output].Columns[forename]" />
+                    <inputColumn
+                      refId="Package\cr2013\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[surname]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="surname"
+                      externalMetadataColumnId="Package\cr2013\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[surname]"
+                      lineageId="Package\cr2013\Flat File Source.Outputs[Flat File Source Output].Columns[surname]" />
+                    <inputColumn
+                      refId="Package\cr2013\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[address1]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="address1"
+                      externalMetadataColumnId="Package\cr2013\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[address1]"
+                      lineageId="Package\cr2013\Flat File Source.Outputs[Flat File Source Output].Columns[address1]" />
+                    <inputColumn
+                      refId="Package\cr2013\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[address2]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="address2"
+                      externalMetadataColumnId="Package\cr2013\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[address2]"
+                      lineageId="Package\cr2013\Flat File Source.Outputs[Flat File Source Output].Columns[address2]" />
+                    <inputColumn
+                      refId="Package\cr2013\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[address3]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="address3"
+                      externalMetadataColumnId="Package\cr2013\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[address3]"
+                      lineageId="Package\cr2013\Flat File Source.Outputs[Flat File Source Output].Columns[address3]" />
+                    <inputColumn
+                      refId="Package\cr2013\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[address4]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="address4"
+                      externalMetadataColumnId="Package\cr2013\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[address4]"
+                      lineageId="Package\cr2013\Flat File Source.Outputs[Flat File Source Output].Columns[address4]" />
+                    <inputColumn
+                      refId="Package\cr2013\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[address5]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="address5"
+                      externalMetadataColumnId="Package\cr2013\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[address5]"
+                      lineageId="Package\cr2013\Flat File Source.Outputs[Flat File Source Output].Columns[address5]" />
+                    <inputColumn
+                      refId="Package\cr2013\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[address6]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="100"
+                      cachedName="address6"
+                      externalMetadataColumnId="Package\cr2013\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[address6]"
+                      lineageId="Package\cr2013\Flat File Source.Outputs[Flat File Source Output].Columns[address6]" />
+                    <inputColumn
+                      refId="Package\cr2013\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[postcode]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="9"
+                      cachedName="postcode"
+                      externalMetadataColumnId="Package\cr2013\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[postcode]"
+                      lineageId="Package\cr2013\Flat File Source.Outputs[Flat File Source Output].Columns[postcode]" />
+                    <inputColumn
+                      refId="Package\cr2013\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[std_postcode]"
+                      cachedCodepage="1252"
+                      cachedDataType="str"
+                      cachedLength="9"
+                      cachedName="std_postcode"
+                      externalMetadataColumnId="Package\cr2013\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[std_postcode]"
+                      lineageId="Package\cr2013\Flat File Source.Outputs[Flat File Source Output].Columns[std_postcode]" />
+                    <inputColumn
+                      refId="Package\cr2013\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[last_seen]"
+                      cachedDataType="i4"
+                      cachedName="last_seen"
+                      externalMetadataColumnId="Package\cr2013\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[last_seen]"
+                      lineageId="Package\cr2013\Flat File Source.Outputs[Flat File Source Output].Columns[last_seen]" />
+                    <inputColumn
+                      refId="Package\cr2013\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[year]"
+                      cachedDataType="i4"
+                      cachedName="year"
+                      externalMetadataColumnId="Package\cr2013\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[year]"
+                      lineageId="Package\cr2013\Derived Column.Outputs[Derived Column Output].Columns[year]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\cr2013\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[year]"
+                      dataType="i4"
+                      name="year" />
+                    <externalMetadataColumn
+                      refId="Package\cr2013\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[id1]"
+                      dataType="i4"
+                      name="id1" />
+                    <externalMetadataColumn
+                      refId="Package\cr2013\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[id2]"
+                      dataType="i4"
+                      name="id2" />
+                    <externalMetadataColumn
+                      refId="Package\cr2013\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[title]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="title" />
+                    <externalMetadataColumn
+                      refId="Package\cr2013\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[forename]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="forename" />
+                    <externalMetadataColumn
+                      refId="Package\cr2013\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[surname]"
+                      codePage="1252"
+                      dataType="str"
+                      length="50"
+                      name="surname" />
+                    <externalMetadataColumn
+                      refId="Package\cr2013\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[address1]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="address1" />
+                    <externalMetadataColumn
+                      refId="Package\cr2013\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[address2]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="address2" />
+                    <externalMetadataColumn
+                      refId="Package\cr2013\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[address3]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="address3" />
+                    <externalMetadataColumn
+                      refId="Package\cr2013\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[address4]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="address4" />
+                    <externalMetadataColumn
+                      refId="Package\cr2013\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[address5]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="address5" />
+                    <externalMetadataColumn
+                      refId="Package\cr2013\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[address6]"
+                      codePage="1252"
+                      dataType="str"
+                      length="100"
+                      name="address6" />
+                    <externalMetadataColumn
+                      refId="Package\cr2013\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[postcode]"
+                      codePage="1252"
+                      dataType="str"
+                      length="9"
+                      name="postcode" />
+                    <externalMetadataColumn
+                      refId="Package\cr2013\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[std_postcode]"
+                      codePage="1252"
+                      dataType="str"
+                      length="9"
+                      name="std_postcode" />
+                    <externalMetadataColumn
+                      refId="Package\cr2013\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[last_seen]"
+                      dataType="i4"
+                      name="last_seen" />
+                    <externalMetadataColumn
+                      refId="Package\cr2013\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[source]"
+                      codePage="1252"
+                      dataType="str"
+                      length="1"
+                      name="source" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\cr2013\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\cr2013\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\cr2013\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\cr2013\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\cr2013\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\cr2013\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\cr2013.Paths[Derived Column Output]"
+              endId="Package\cr2013\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              name="Derived Column Output"
+              startId="Package\cr2013\Derived Column.Outputs[Derived Column Output]" />
+            <path
+              refId="Package\cr2013.Paths[Flat File Source Output]"
+              endId="Package\cr2013\Derived Column.Inputs[Derived Column Input]"
+              name="Flat File Source Output"
+              startId="Package\cr2013\Flat File Source.Outputs[Flat File Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\Foreach Loop Container"
+      DTS:CreationName="STOCK:FOREACHLOOP"
+      DTS:Description="Foreach Loop Container"
+      DTS:DTSID="{00E195BD-3456-4055-9F8D-A176C019FC2C}"
+      DTS:ExecutableType="STOCK:FOREACHLOOP"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Foreach Loop Container">
+      <DTS:ForEachEnumerator
+        DTS:CreationName="Microsoft.ForEachFileEnumerator"
+        DTS:DTSID="{F1E01917-F673-4830-BF84-04D359489EE3}"
+        DTS:ObjectName="{F1E01917-F673-4830-BF84-04D359489EE3}">
+        <DTS:PropertyExpression
+          DTS:Name="Directory">@[User::varFilePath]</DTS:PropertyExpression>
+        <DTS:ObjectData>
+          <ForEachFileEnumeratorProperties>
+            <FEFEProperty
+              Folder="\\v0014-sql01\Shared\CDRC Data\UCL\CACI - Consumer registers" />
+            <FEFEProperty
+              FileSpec="*.csv" />
+            <FEFEProperty
+              FileNameRetrievalType="0" />
+            <FEFEProperty
+              Recurse="0" />
+          </ForEachFileEnumeratorProperties>
+        </DTS:ObjectData>
+      </DTS:ForEachEnumerator>
+      <DTS:Variables />
+      <DTS:Executables>
+        <DTS:Executable
+          DTS:refId="Package\Foreach Loop Container\cr2014  to cr 2017"
+          DTS:CreationName="Microsoft.Pipeline"
+          DTS:Description="Data Flow Task"
+          DTS:DTSID="{922E9205-2321-4631-980C-F6C1F6E39E8D}"
+          DTS:ExecutableType="Microsoft.Pipeline"
+          DTS:LocaleID="-1"
+          DTS:ObjectName="cr2014  to cr 2017"
+          DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+          <DTS:Variables />
+          <DTS:PropertyExpression
+            DTS:Name="Disable">TOKEN( @[User::varFileName] , "\\", TOKENCOUNT( @[User::varFileName] , "\\") ) == "cr2013.csv"</DTS:PropertyExpression>
+          <DTS:ObjectData>
+            <pipeline
+              version="1">
+              <components>
+                <component
+                  refId="Package\Foreach Loop Container\cr2014  to cr 2017\Derived Column"
+                  componentClassID="Microsoft.DerivedColumn"
+                  contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+                  description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+                  name="Derived Column"
+                  usesDispositions="true">
+                  <inputs>
+                    <input
+                      refId="Package\Foreach Loop Container\cr2014  to cr 2017\Derived Column.Inputs[Derived Column Input]"
+                      description="Input to the Derived Column Transformation"
+                      name="Derived Column Input">
+                      <externalMetadataColumns />
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\Foreach Loop Container\cr2014  to cr 2017\Derived Column.Outputs[Derived Column Output]"
+                      description="Default Output of the Derived Column Transformation"
+                      exclusionGroup="1"
+                      name="Derived Column Output"
+                      synchronousInputId="Package\Foreach Loop Container\cr2014  to cr 2017\Derived Column.Inputs[Derived Column Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Foreach Loop Container\cr2014  to cr 2017\Derived Column.Outputs[Derived Column Output].Columns[year]"
+                          dataType="i4"
+                          errorOrTruncationOperation="Computation"
+                          errorRowDisposition="FailComponent"
+                          lineageId="Package\Foreach Loop Container\cr2014  to cr 2017\Derived Column.Outputs[Derived Column Output].Columns[year]"
+                          name="year"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              containsID="true"
+                              dataType="System.String"
+                              description="Derived Column Expression"
+                              name="Expression">(DT_I4)[RIGHT]([REPLACE]([TOKEN](@[User::varFileName],"\\",[TOKENCOUNT](@[User::varFileName],"\\")),".csv",""),4)</property>
+                            <property
+                              containsID="true"
+                              dataType="System.String"
+                              description="Derived Column Friendly Expression"
+                              expressionType="Notify"
+                              name="FriendlyExpression">(DT_I4)RIGHT(REPLACE(TOKEN(@[User::varFileName],"\\",TOKENCOUNT(@[User::varFileName],"\\")),".csv",""),4)</property>
+                          </properties>
+                        </outputColumn>
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                    <output
+                      refId="Package\Foreach Loop Container\cr2014  to cr 2017\Derived Column.Outputs[Derived Column Error Output]"
+                      description="Error Output of the Derived Column Transformation"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="Derived Column Error Output"
+                      synchronousInputId="Package\Foreach Loop Container\cr2014  to cr 2017\Derived Column.Inputs[Derived Column Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Foreach Loop Container\cr2014  to cr 2017\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Foreach Loop Container\cr2014  to cr 2017\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Foreach Loop Container\cr2014  to cr 2017\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Foreach Loop Container\cr2014  to cr 2017\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\Foreach Loop Container\cr2014  to cr 2017\Flat File Source"
+                  componentClassID="Microsoft.FlatFileSource"
+                  contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+                  description="Flat File Source"
+                  localeId="2057"
+                  name="Flat File Source"
+                  usesDispositions="true"
+                  version="1">
+                  <properties>
+                    <property
+                      dataType="System.Boolean"
+                      description="Specifies whether zero-length columns are treated as null."
+                      name="RetainNulls">true</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                      name="FileNameColumnName"></property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Foreach Loop Container\cr2014  to cr 2017\Flat File Source.Connections[FlatFileConnection]"
+                      connectionManagerID="Package.ConnectionManagers[CACI - Consumer Registers.csv]"
+                      connectionManagerRefId="Package.ConnectionManagers[CACI - Consumer Registers.csv]"
+                      name="FlatFileConnection" />
+                  </connections>
+                  <outputs>
+                    <output
+                      refId="Package\Foreach Loop Container\cr2014  to cr 2017\Flat File Source.Outputs[Flat File Source Output]"
+                      name="Flat File Source Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Foreach Loop Container\cr2014  to cr 2017\Flat File Source.Outputs[Flat File Source Output].Columns[id1]"
+                          dataType="i4"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Foreach Loop Container\cr2014  to cr 2017\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[id1]"
+                          lineageId="Package\Foreach Loop Container\cr2014  to cr 2017\Flat File Source.Outputs[Flat File Source Output].Columns[id1]"
+                          name="id1"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Foreach Loop Container\cr2014  to cr 2017\Flat File Source.Outputs[Flat File Source Output].Columns[id2]"
+                          dataType="i4"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Foreach Loop Container\cr2014  to cr 2017\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[id2]"
+                          lineageId="Package\Foreach Loop Container\cr2014  to cr 2017\Flat File Source.Outputs[Flat File Source Output].Columns[id2]"
+                          name="id2"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Foreach Loop Container\cr2014  to cr 2017\Flat File Source.Outputs[Flat File Source Output].Columns[title]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Foreach Loop Container\cr2014  to cr 2017\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[title]"
+                          length="50"
+                          lineageId="Package\Foreach Loop Container\cr2014  to cr 2017\Flat File Source.Outputs[Flat File Source Output].Columns[title]"
+                          name="title"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Foreach Loop Container\cr2014  to cr 2017\Flat File Source.Outputs[Flat File Source Output].Columns[forename]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Foreach Loop Container\cr2014  to cr 2017\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[forename]"
+                          length="50"
+                          lineageId="Package\Foreach Loop Container\cr2014  to cr 2017\Flat File Source.Outputs[Flat File Source Output].Columns[forename]"
+                          name="forename"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Foreach Loop Container\cr2014  to cr 2017\Flat File Source.Outputs[Flat File Source Output].Columns[surname]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Foreach Loop Container\cr2014  to cr 2017\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[surname]"
+                          length="50"
+                          lineageId="Package\Foreach Loop Container\cr2014  to cr 2017\Flat File Source.Outputs[Flat File Source Output].Columns[surname]"
+                          name="surname"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Foreach Loop Container\cr2014  to cr 2017\Flat File Source.Outputs[Flat File Source Output].Columns[address1]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Foreach Loop Container\cr2014  to cr 2017\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[address1]"
+                          length="100"
+                          lineageId="Package\Foreach Loop Container\cr2014  to cr 2017\Flat File Source.Outputs[Flat File Source Output].Columns[address1]"
+                          name="address1"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Foreach Loop Container\cr2014  to cr 2017\Flat File Source.Outputs[Flat File Source Output].Columns[address2]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Foreach Loop Container\cr2014  to cr 2017\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[address2]"
+                          length="100"
+                          lineageId="Package\Foreach Loop Container\cr2014  to cr 2017\Flat File Source.Outputs[Flat File Source Output].Columns[address2]"
+                          name="address2"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Foreach Loop Container\cr2014  to cr 2017\Flat File Source.Outputs[Flat File Source Output].Columns[address3]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Foreach Loop Container\cr2014  to cr 2017\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[address3]"
+                          length="100"
+                          lineageId="Package\Foreach Loop Container\cr2014  to cr 2017\Flat File Source.Outputs[Flat File Source Output].Columns[address3]"
+                          name="address3"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Foreach Loop Container\cr2014  to cr 2017\Flat File Source.Outputs[Flat File Source Output].Columns[address4]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Foreach Loop Container\cr2014  to cr 2017\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[address4]"
+                          length="100"
+                          lineageId="Package\Foreach Loop Container\cr2014  to cr 2017\Flat File Source.Outputs[Flat File Source Output].Columns[address4]"
+                          name="address4"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Foreach Loop Container\cr2014  to cr 2017\Flat File Source.Outputs[Flat File Source Output].Columns[address5]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Foreach Loop Container\cr2014  to cr 2017\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[address5]"
+                          length="100"
+                          lineageId="Package\Foreach Loop Container\cr2014  to cr 2017\Flat File Source.Outputs[Flat File Source Output].Columns[address5]"
+                          name="address5"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Foreach Loop Container\cr2014  to cr 2017\Flat File Source.Outputs[Flat File Source Output].Columns[address6]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Foreach Loop Container\cr2014  to cr 2017\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[address6]"
+                          length="100"
+                          lineageId="Package\Foreach Loop Container\cr2014  to cr 2017\Flat File Source.Outputs[Flat File Source Output].Columns[address6]"
+                          name="address6"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Foreach Loop Container\cr2014  to cr 2017\Flat File Source.Outputs[Flat File Source Output].Columns[postcode]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Foreach Loop Container\cr2014  to cr 2017\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[postcode]"
+                          length="9"
+                          lineageId="Package\Foreach Loop Container\cr2014  to cr 2017\Flat File Source.Outputs[Flat File Source Output].Columns[postcode]"
+                          name="postcode"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Foreach Loop Container\cr2014  to cr 2017\Flat File Source.Outputs[Flat File Source Output].Columns[last_seen]"
+                          dataType="i4"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Foreach Loop Container\cr2014  to cr 2017\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[last_seen]"
+                          lineageId="Package\Foreach Loop Container\cr2014  to cr 2017\Flat File Source.Outputs[Flat File Source Output].Columns[last_seen]"
+                          name="last_seen"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                        <outputColumn
+                          refId="Package\Foreach Loop Container\cr2014  to cr 2017\Flat File Source.Outputs[Flat File Source Output].Columns[source]"
+                          codePage="1252"
+                          dataType="str"
+                          errorOrTruncationOperation="Conversion"
+                          errorRowDisposition="FailComponent"
+                          externalMetadataColumnId="Package\Foreach Loop Container\cr2014  to cr 2017\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[source]"
+                          length="1"
+                          lineageId="Package\Foreach Loop Container\cr2014  to cr 2017\Flat File Source.Outputs[Flat File Source Output].Columns[source]"
+                          name="source"
+                          truncationRowDisposition="FailComponent">
+                          <properties>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                              name="FastParse">false</property>
+                            <property
+                              dataType="System.Boolean"
+                              description="Indicates whether the data is in binary format."
+                              name="UseBinaryFormat">false</property>
+                          </properties>
+                        </outputColumn>
+                      </outputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\cr2014  to cr 2017\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[id1]"
+                          dataType="i4"
+                          name="id1" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\cr2014  to cr 2017\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[id2]"
+                          dataType="i4"
+                          name="id2" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\cr2014  to cr 2017\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[title]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="title" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\cr2014  to cr 2017\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[forename]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="forename" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\cr2014  to cr 2017\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[surname]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="surname" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\cr2014  to cr 2017\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[address1]"
+                          codePage="1252"
+                          dataType="str"
+                          length="100"
+                          name="address1" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\cr2014  to cr 2017\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[address2]"
+                          codePage="1252"
+                          dataType="str"
+                          length="100"
+                          name="address2" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\cr2014  to cr 2017\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[address3]"
+                          codePage="1252"
+                          dataType="str"
+                          length="100"
+                          name="address3" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\cr2014  to cr 2017\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[address4]"
+                          codePage="1252"
+                          dataType="str"
+                          length="100"
+                          name="address4" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\cr2014  to cr 2017\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[address5]"
+                          codePage="1252"
+                          dataType="str"
+                          length="100"
+                          name="address5" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\cr2014  to cr 2017\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[address6]"
+                          codePage="1252"
+                          dataType="str"
+                          length="100"
+                          name="address6" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\cr2014  to cr 2017\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[postcode]"
+                          codePage="1252"
+                          dataType="str"
+                          length="9"
+                          name="postcode" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\cr2014  to cr 2017\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[last_seen]"
+                          dataType="i4"
+                          name="last_seen" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\cr2014  to cr 2017\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[source]"
+                          codePage="1252"
+                          dataType="str"
+                          length="1"
+                          name="source" />
+                      </externalMetadataColumns>
+                    </output>
+                    <output
+                      refId="Package\Foreach Loop Container\cr2014  to cr 2017\Flat File Source.Outputs[Flat File Source Error Output]"
+                      isErrorOut="true"
+                      name="Flat File Source Error Output">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Foreach Loop Container\cr2014  to cr 2017\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                          codePage="1252"
+                          dataType="text"
+                          description="Flat File Source Error Output Column"
+                          lineageId="Package\Foreach Loop Container\cr2014  to cr 2017\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                          name="Flat File Source Error Output Column" />
+                        <outputColumn
+                          refId="Package\Foreach Loop Container\cr2014  to cr 2017\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Foreach Loop Container\cr2014  to cr 2017\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Foreach Loop Container\cr2014  to cr 2017\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Foreach Loop Container\cr2014  to cr 2017\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+                <component
+                  refId="Package\Foreach Loop Container\cr2014  to cr 2017\OLE DB Destination"
+                  componentClassID="Microsoft.OLEDBDestination"
+                  contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+                  description="OLE DB Destination"
+                  name="OLE DB Destination"
+                  usesDispositions="true"
+                  version="4">
+                  <properties>
+                    <property
+                      dataType="System.Int32"
+                      description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                      name="CommandTimeout">0</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the name of the database object used to open a rowset."
+                      name="OpenRowset">[caci].[Controlled_ConsumerRegisters]</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies the variable that contains the name of the database object used to open a rowset."
+                      name="OpenRowsetVariable"></property>
+                    <property
+                      dataType="System.String"
+                      description="The SQL command to be executed."
+                      name="SqlCommand"
+                      UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the column code page to use when code page information is unavailable from the data source."
+                      name="DefaultCodePage">1252</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Forces the use of the DefaultCodePage property value when describing character data."
+                      name="AlwaysUseDefaultCodePage">false</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies the mode used to access the database."
+                      name="AccessMode"
+                      typeConverter="AccessMode">3</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepIdentity">false</property>
+                    <property
+                      dataType="System.Boolean"
+                      description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                      name="FastLoadKeepNulls">true</property>
+                    <property
+                      dataType="System.String"
+                      description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                      name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                    <property
+                      dataType="System.Int32"
+                      description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                      name="FastLoadMaxInsertCommitSize">2147483647</property>
+                  </properties>
+                  <connections>
+                    <connection
+                      refId="Package\Foreach Loop Container\cr2014  to cr 2017\OLE DB Destination.Connections[OleDbConnection]"
+                      connectionManagerID="Package.ConnectionManagers[V0014-SQL01.CDRC]"
+                      connectionManagerRefId="Package.ConnectionManagers[V0014-SQL01.CDRC]"
+                      description="The OLE DB runtime connection used to access the database."
+                      name="OleDbConnection" />
+                  </connections>
+                  <inputs>
+                    <input
+                      refId="Package\Foreach Loop Container\cr2014  to cr 2017\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                      errorOrTruncationOperation="Insert"
+                      errorRowDisposition="FailComponent"
+                      hasSideEffects="true"
+                      name="OLE DB Destination Input">
+                      <inputColumns>
+                        <inputColumn
+                          refId="Package\Foreach Loop Container\cr2014  to cr 2017\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[id1]"
+                          cachedDataType="i4"
+                          cachedName="id1"
+                          externalMetadataColumnId="Package\Foreach Loop Container\cr2014  to cr 2017\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[id1]"
+                          lineageId="Package\Foreach Loop Container\cr2014  to cr 2017\Flat File Source.Outputs[Flat File Source Output].Columns[id1]" />
+                        <inputColumn
+                          refId="Package\Foreach Loop Container\cr2014  to cr 2017\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[id2]"
+                          cachedDataType="i4"
+                          cachedName="id2"
+                          externalMetadataColumnId="Package\Foreach Loop Container\cr2014  to cr 2017\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[id2]"
+                          lineageId="Package\Foreach Loop Container\cr2014  to cr 2017\Flat File Source.Outputs[Flat File Source Output].Columns[id2]" />
+                        <inputColumn
+                          refId="Package\Foreach Loop Container\cr2014  to cr 2017\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[title]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="title"
+                          externalMetadataColumnId="Package\Foreach Loop Container\cr2014  to cr 2017\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[title]"
+                          lineageId="Package\Foreach Loop Container\cr2014  to cr 2017\Flat File Source.Outputs[Flat File Source Output].Columns[title]" />
+                        <inputColumn
+                          refId="Package\Foreach Loop Container\cr2014  to cr 2017\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[forename]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="forename"
+                          externalMetadataColumnId="Package\Foreach Loop Container\cr2014  to cr 2017\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[forename]"
+                          lineageId="Package\Foreach Loop Container\cr2014  to cr 2017\Flat File Source.Outputs[Flat File Source Output].Columns[forename]" />
+                        <inputColumn
+                          refId="Package\Foreach Loop Container\cr2014  to cr 2017\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[surname]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="50"
+                          cachedName="surname"
+                          externalMetadataColumnId="Package\Foreach Loop Container\cr2014  to cr 2017\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[surname]"
+                          lineageId="Package\Foreach Loop Container\cr2014  to cr 2017\Flat File Source.Outputs[Flat File Source Output].Columns[surname]" />
+                        <inputColumn
+                          refId="Package\Foreach Loop Container\cr2014  to cr 2017\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[address1]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="100"
+                          cachedName="address1"
+                          externalMetadataColumnId="Package\Foreach Loop Container\cr2014  to cr 2017\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[address1]"
+                          lineageId="Package\Foreach Loop Container\cr2014  to cr 2017\Flat File Source.Outputs[Flat File Source Output].Columns[address1]" />
+                        <inputColumn
+                          refId="Package\Foreach Loop Container\cr2014  to cr 2017\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[address2]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="100"
+                          cachedName="address2"
+                          externalMetadataColumnId="Package\Foreach Loop Container\cr2014  to cr 2017\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[address2]"
+                          lineageId="Package\Foreach Loop Container\cr2014  to cr 2017\Flat File Source.Outputs[Flat File Source Output].Columns[address2]" />
+                        <inputColumn
+                          refId="Package\Foreach Loop Container\cr2014  to cr 2017\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[address3]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="100"
+                          cachedName="address3"
+                          externalMetadataColumnId="Package\Foreach Loop Container\cr2014  to cr 2017\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[address3]"
+                          lineageId="Package\Foreach Loop Container\cr2014  to cr 2017\Flat File Source.Outputs[Flat File Source Output].Columns[address3]" />
+                        <inputColumn
+                          refId="Package\Foreach Loop Container\cr2014  to cr 2017\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[address4]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="100"
+                          cachedName="address4"
+                          externalMetadataColumnId="Package\Foreach Loop Container\cr2014  to cr 2017\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[address4]"
+                          lineageId="Package\Foreach Loop Container\cr2014  to cr 2017\Flat File Source.Outputs[Flat File Source Output].Columns[address4]" />
+                        <inputColumn
+                          refId="Package\Foreach Loop Container\cr2014  to cr 2017\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[address5]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="100"
+                          cachedName="address5"
+                          externalMetadataColumnId="Package\Foreach Loop Container\cr2014  to cr 2017\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[address5]"
+                          lineageId="Package\Foreach Loop Container\cr2014  to cr 2017\Flat File Source.Outputs[Flat File Source Output].Columns[address5]" />
+                        <inputColumn
+                          refId="Package\Foreach Loop Container\cr2014  to cr 2017\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[address6]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="100"
+                          cachedName="address6"
+                          externalMetadataColumnId="Package\Foreach Loop Container\cr2014  to cr 2017\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[address6]"
+                          lineageId="Package\Foreach Loop Container\cr2014  to cr 2017\Flat File Source.Outputs[Flat File Source Output].Columns[address6]" />
+                        <inputColumn
+                          refId="Package\Foreach Loop Container\cr2014  to cr 2017\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[postcode]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="9"
+                          cachedName="postcode"
+                          externalMetadataColumnId="Package\Foreach Loop Container\cr2014  to cr 2017\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[postcode]"
+                          lineageId="Package\Foreach Loop Container\cr2014  to cr 2017\Flat File Source.Outputs[Flat File Source Output].Columns[postcode]" />
+                        <inputColumn
+                          refId="Package\Foreach Loop Container\cr2014  to cr 2017\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[last_seen]"
+                          cachedDataType="i4"
+                          cachedName="last_seen"
+                          externalMetadataColumnId="Package\Foreach Loop Container\cr2014  to cr 2017\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[last_seen]"
+                          lineageId="Package\Foreach Loop Container\cr2014  to cr 2017\Flat File Source.Outputs[Flat File Source Output].Columns[last_seen]" />
+                        <inputColumn
+                          refId="Package\Foreach Loop Container\cr2014  to cr 2017\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[year]"
+                          cachedDataType="i4"
+                          cachedName="year"
+                          externalMetadataColumnId="Package\Foreach Loop Container\cr2014  to cr 2017\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[year]"
+                          lineageId="Package\Foreach Loop Container\cr2014  to cr 2017\Derived Column.Outputs[Derived Column Output].Columns[year]" />
+                        <inputColumn
+                          refId="Package\Foreach Loop Container\cr2014  to cr 2017\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[source]"
+                          cachedCodepage="1252"
+                          cachedDataType="str"
+                          cachedLength="1"
+                          cachedName="source"
+                          externalMetadataColumnId="Package\Foreach Loop Container\cr2014  to cr 2017\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[source]"
+                          lineageId="Package\Foreach Loop Container\cr2014  to cr 2017\Flat File Source.Outputs[Flat File Source Output].Columns[source]" />
+                      </inputColumns>
+                      <externalMetadataColumns
+                        isUsed="True">
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\cr2014  to cr 2017\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[id1]"
+                          dataType="i4"
+                          name="id1" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\cr2014  to cr 2017\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[id2]"
+                          dataType="i4"
+                          name="id2" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\cr2014  to cr 2017\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[title]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="title" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\cr2014  to cr 2017\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[forename]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="forename" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\cr2014  to cr 2017\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[surname]"
+                          codePage="1252"
+                          dataType="str"
+                          length="50"
+                          name="surname" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\cr2014  to cr 2017\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[address1]"
+                          codePage="1252"
+                          dataType="str"
+                          length="100"
+                          name="address1" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\cr2014  to cr 2017\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[address2]"
+                          codePage="1252"
+                          dataType="str"
+                          length="100"
+                          name="address2" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\cr2014  to cr 2017\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[address3]"
+                          codePage="1252"
+                          dataType="str"
+                          length="100"
+                          name="address3" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\cr2014  to cr 2017\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[address4]"
+                          codePage="1252"
+                          dataType="str"
+                          length="100"
+                          name="address4" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\cr2014  to cr 2017\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[address5]"
+                          codePage="1252"
+                          dataType="str"
+                          length="100"
+                          name="address5" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\cr2014  to cr 2017\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[address6]"
+                          codePage="1252"
+                          dataType="str"
+                          length="100"
+                          name="address6" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\cr2014  to cr 2017\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[postcode]"
+                          codePage="1252"
+                          dataType="str"
+                          length="9"
+                          name="postcode" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\cr2014  to cr 2017\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[std_postcode]"
+                          codePage="1252"
+                          dataType="str"
+                          length="9"
+                          name="std_postcode" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\cr2014  to cr 2017\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[last_seen]"
+                          dataType="i4"
+                          name="last_seen" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\cr2014  to cr 2017\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[year]"
+                          dataType="i4"
+                          name="year" />
+                        <externalMetadataColumn
+                          refId="Package\Foreach Loop Container\cr2014  to cr 2017\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[source]"
+                          codePage="1252"
+                          dataType="str"
+                          length="1"
+                          name="source" />
+                      </externalMetadataColumns>
+                    </input>
+                  </inputs>
+                  <outputs>
+                    <output
+                      refId="Package\Foreach Loop Container\cr2014  to cr 2017\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                      exclusionGroup="1"
+                      isErrorOut="true"
+                      name="OLE DB Destination Error Output"
+                      synchronousInputId="Package\Foreach Loop Container\cr2014  to cr 2017\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                      <outputColumns>
+                        <outputColumn
+                          refId="Package\Foreach Loop Container\cr2014  to cr 2017\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          dataType="i4"
+                          lineageId="Package\Foreach Loop Container\cr2014  to cr 2017\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                          name="ErrorCode"
+                          specialFlags="1" />
+                        <outputColumn
+                          refId="Package\Foreach Loop Container\cr2014  to cr 2017\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          dataType="i4"
+                          lineageId="Package\Foreach Loop Container\cr2014  to cr 2017\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                          name="ErrorColumn"
+                          specialFlags="2" />
+                      </outputColumns>
+                      <externalMetadataColumns />
+                    </output>
+                  </outputs>
+                </component>
+              </components>
+              <paths>
+                <path
+                  refId="Package\Foreach Loop Container\cr2014  to cr 2017.Paths[Derived Column Output]"
+                  endId="Package\Foreach Loop Container\cr2014  to cr 2017\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  name="Derived Column Output"
+                  startId="Package\Foreach Loop Container\cr2014  to cr 2017\Derived Column.Outputs[Derived Column Output]" />
+                <path
+                  refId="Package\Foreach Loop Container\cr2014  to cr 2017.Paths[Flat File Source Output]"
+                  endId="Package\Foreach Loop Container\cr2014  to cr 2017\Derived Column.Inputs[Derived Column Input]"
+                  name="Flat File Source Output"
+                  startId="Package\Foreach Loop Container\cr2014  to cr 2017\Flat File Source.Outputs[Flat File Source Output]" />
+              </paths>
+            </pipeline>
+          </DTS:ObjectData>
+        </DTS:Executable>
+      </DTS:Executables>
+      <DTS:ForEachVariableMappings>
+        <DTS:ForEachVariableMapping
+          DTS:CreationName=""
+          DTS:DTSID="{CE8AB64E-59F5-4CB1-9635-D41D2E6BEC67}"
+          DTS:ObjectName="{CE8AB64E-59F5-4CB1-9635-D41D2E6BEC67}"
+          DTS:ValueIndex="0"
+          DTS:VariableName="User::varFileName" />
+      </DTS:ForEachVariableMappings>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint]"
+      DTS:CreationName=""
+      DTS:DTSID="{2D2D157B-7414-445A-9FE0-47704BA87AA5}"
+      DTS:From="Package\cr2013"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint"
+      DTS:To="Package\Foreach Loop Container" />
+  </DTS:PrecedenceConstraints>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="166,42"
+          Id="Package\Foreach Loop Container\cr2014  to cr 2017"
+          TopLeft="5.5,5.5" />
+        <ContainerLayout
+          HeaderHeight="43"
+          IsExpanded="True"
+          PanelSize="176,102"
+          Size="176,146"
+          Id="Package\Foreach Loop Container"
+          TopLeft="342.5,205.5" />
+        <NodeLayout
+          Size="111,42"
+          Id="Package\cr2013"
+          TopLeft="368.5,96.5" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="427.25,138.5">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,67"
+              Start="0,0"
+              End="0,59.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,59.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\Foreach Loop Container\cr2014  to cr 2017">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="171,42"
+          Id="Package\Foreach Loop Container\cr2014  to cr 2017\OLE DB Destination"
+          TopLeft="252,298" />
+        <NodeLayout
+          Size="151,42"
+          Id="Package\Foreach Loop Container\cr2014  to cr 2017\Flat File Source"
+          TopLeft="215,70" />
+        <NodeLayout
+          Size="154,42"
+          Id="Package\Foreach Loop Container\cr2014  to cr 2017\Derived Column"
+          TopLeft="270,174" />
+        <EdgeLayout
+          Id="Package\Foreach Loop Container\cr2014  to cr 2017.Paths[Flat File Source Output]"
+          TopLeft="290.5,112">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="56.5,62"
+              Start="0,0"
+              End="56.5,54.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,27" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,27"
+                    Point2="0,31"
+                    Point3="4,31" />
+                  <mssgle:LineSegment
+                    End="52.5,31" />
+                  <mssgle:CubicBezierSegment
+                    Point1="52.5,31"
+                    Point2="56.5,31"
+                    Point3="56.5,35" />
+                  <mssgle:LineSegment
+                    End="56.5,54.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Foreach Loop Container\cr2014  to cr 2017.Paths[Derived Column Output]"
+          TopLeft="347,216">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-9.5,82"
+              Start="0,0"
+              End="-9.5,74.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,37" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,37"
+                    Point2="0,41"
+                    Point3="-4,41" />
+                  <mssgle:LineSegment
+                    End="-5.5,41" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-5.5,41"
+                    Point2="-9.5,41"
+                    Point3="-9.5,45" />
+                  <mssgle:LineSegment
+                    End="-9.5,74.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Foreach Loop Container\cr2014  to cr 2017\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\cr2013">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="151,42"
+          Id="Package\cr2013\Flat File Source"
+          TopLeft="289,95" />
+        <NodeLayout
+          Size="154,42"
+          Id="Package\cr2013\Derived Column"
+          TopLeft="289,197" />
+        <EdgeLayout
+          Id="Package\cr2013.Paths[Flat File Source Output]"
+          TopLeft="365.25,137">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="171,42"
+          Id="Package\cr2013\OLE DB Destination"
+          TopLeft="300,323" />
+        <EdgeLayout
+          Id="Package\cr2013.Paths[Derived Column Output]"
+          TopLeft="366,239">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="19.5,84"
+              Start="0,0"
+              End="19.5,76.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,38" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,38"
+                    Point2="0,42"
+                    Point3="4,42" />
+                  <mssgle:LineSegment
+                    End="15.5,42" />
+                  <mssgle:CubicBezierSegment
+                    Point1="15.5,42"
+                    Point2="19.5,42"
+                    Point3="19.5,46" />
+                  <mssgle:LineSegment
+                    End="19.5,76.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\cr2013\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>
