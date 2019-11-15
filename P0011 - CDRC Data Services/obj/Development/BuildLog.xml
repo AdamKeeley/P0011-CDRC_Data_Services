@@ -2,58 +2,63 @@
 <BuildLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ProjectInfo>
     <Name>P0011 - CDRC Data Services</Name>
-    <LastWriteTime>2018-08-23T14:53:10.0566865Z</LastWriteTime>
+    <LastWriteTime>2019-11-15T15:15:20.1634186Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
     <ProjectBuildItemInfo>
       <Name>GeoUniq.dtsx</Name>
-      <LastWriteTime>2017-12-07T18:35:44.7221069Z</LastWriteTime>
+      <LastWriteTime>2019-02-14T15:43:05.8774557Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>LINK.dtsx</Name>
-      <LastWriteTime>2018-07-16T13:33:54.6159082Z</LastWriteTime>
+      <LastWriteTime>2019-02-14T15:43:06.0493275Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>AirDNA.dtsx</Name>
-      <LastWriteTime>2018-07-19T13:45:30.7316263Z</LastWriteTime>
+      <LastWriteTime>2019-02-14T15:43:05.0181336Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>UKWCS.dtsx</Name>
-      <LastWriteTime>2018-07-24T11:21:57.0991998Z</LastWriteTime>
+      <LastWriteTime>2019-02-14T15:43:10.1587058Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>YouGov.dtsx</Name>
-      <LastWriteTime>2018-07-24T15:35:10.431806Z</LastWriteTime>
+      <LastWriteTime>2019-02-14T16:07:31.7043242Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>OtleyBID.dtsx</Name>
-      <LastWriteTime>2018-08-15T14:50:30.6508032Z</LastWriteTime>
+      <LastWriteTime>2019-02-14T15:43:09.1274633Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>CACI.dtsx</Name>
-      <LastWriteTime>2018-07-31T09:21:08.7127752Z</LastWriteTime>
+      <LastWriteTime>2019-02-14T15:43:05.4400061Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>DataTalk.dtsx</Name>
-      <LastWriteTime>2018-07-31T14:23:53.7435933Z</LastWriteTime>
+      <LastWriteTime>2019-02-14T15:43:05.5493393Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>ElectoralRegister.dtsx</Name>
-      <LastWriteTime>2018-07-31T15:07:08.7043019Z</LastWriteTime>
+      <LastWriteTime>2019-02-14T15:43:05.6743347Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>RegionalTransportProvider.dtsx</Name>
-      <LastWriteTime>2018-08-23T15:27:18.4538276Z</LastWriteTime>
+      <LastWriteTime>2019-02-14T15:43:09.689967Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>ActiveInspiration_GPS.dtsx</Name>
+      <LastWriteTime>2019-11-15T15:19:51.8910663Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>
