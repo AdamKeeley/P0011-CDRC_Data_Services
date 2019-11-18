@@ -2,7 +2,7 @@
 <BuildLog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <ProjectInfo>
     <Name>P0011 - CDRC Data Services</Name>
-    <LastWriteTime>2019-11-15T15:15:20.1634186Z</LastWriteTime>
+    <LastWriteTime>2019-11-18T14:28:45.8775563Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
@@ -58,7 +58,7 @@
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>ActiveInspiration_GPS.dtsx</Name>
-      <LastWriteTime>2019-11-15T15:19:51.8910663Z</LastWriteTime>
+      <LastWriteTime>2019-11-18T14:36:33.596318Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>
